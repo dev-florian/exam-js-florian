@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "B3-weather-app-base",
+  "name": "florian-football-manager",
   "builds": [
     { "src": "package.json", "use": "@now/static-build" }
   ],
