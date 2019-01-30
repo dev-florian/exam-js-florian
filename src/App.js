@@ -30,12 +30,12 @@ class App extends Component {
     onChoosePlayer(e) {
         let data = Object.assign(this.state.data, {[this.state.playerClicked]: e.player_name});
         this.setState ({
-            data: data
-        })
-
+            data: data,
+            playerClicked: null
+        });
     }
 
-    playerSelect(player) {
+    onCircleSelect(player) {
         this.setState ({
             playerClicked: player
         });
@@ -49,7 +49,7 @@ class App extends Component {
                 {this.state.playerClicked !== null &&
                 <SelectPlayer onChoosePlayer={(selectedPlayer) => this.onChoosePlayer(selectedPlayer)}
                               onTyped={(typed) => this.onTyped(typed)}/>}
-                <Stadium data={this.state.data} onPlayerSelect={(player) => this.playerSelect(player)}/>
+                <Stadium data={this.state.data} onCircleSelect={(player) => this.onCircleSelect(player)}/>
             </div>
         );
     }

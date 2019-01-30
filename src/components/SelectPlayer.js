@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../Stadium.css';
+import '../SelectPlayer.css';
 
 class SelectPlayer extends Component {
     constructor() {
