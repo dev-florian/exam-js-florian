@@ -1,0 +1,20 @@
+input {
+    border-radius: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    margin-top:10px;
+    margin-right:10px;
+}
+
+button:hover {
+    background-color: #555555;
+    color: white;
+}

@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  position: relative;
+  background-image: url("./terrain.png");
+  background-size: cover;
+  padding-top: 1px;
+  height: 600px;
+}
+
+.App h1{
+  text-transform: uppercase;
 }
 
 .App-logo {
